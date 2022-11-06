@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Joti One' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=IM Fell Great Primer SC' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=IM Fell Great Primer' rel='stylesheet'>
+
+  <title>Rocofit</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    html {
+      background: url(./Images/L73UIT.jpg) no-repeat center fixed;
+      background-size: cover;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    /* Style the body */
+    body {
+      font-family: 'IM Fell Great Primer';
+      font-size: 22px;
+      margin: 0;
+      color: white;
+
+    }
+
+    /* Header/logo Title */
+    .header {
+      font-family: 'IM Fell Great Primer SC';
+      font-size: 22px;
+      padding: 0px;
+      text-align: center;
+      color: white;
+    }
+
+    /* Increase the font size of the heading */
+    .header h1 {
+      font-family: 'IM Fell Great Primer SC';
+      font-size: 50px;
+      text-align: center;
+      color: white;
+
+    }
+
+    .button {
+      background-color: #8f8e8e;
+      font-family: 'Joti One';
+      font-size: 18px;
+      border: none;
+      color: rgb(0, 0, 0);
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+
+
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: rgba(146, 123, 99, 0.747);
+    }
+
+    li {
+      float: right;
+      font-family: 'Joti One';
+      font-size: 22px;
+    }
+
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    li a:hover {
+      background-color: rgb(5, 5, 5);
+    }
+
+    /* Column container */
+    .row {
+      display: -ms-flexbox;
+      
+      display: flex;
+      -ms-flex-wrap: wrap;
+      
+      flex-wrap: wrap;
+    }
+
+    
+    /* Sidebar/left column */
+    .side {
+      -ms-flex: 30%;
+      /* IE10 */
+      flex: 30%;
+      background-color: #f1f1f1;
+      color: black;
+      padding: 20px;
+    }
+
+    /* Main column */
+    .main {
+      -ms-flex: 70%;
+      /* IE10 */
+      flex: 70%;
+
+      padding: 20px;
+    }
+
+
+    .fish {
+      width: 100%;
+      padding: 20px;
+    }
+
+    /* Footer */
+    .footer {
+      font-family: 'Joti One';
+      padding: 0px;
+      text-align: center;
+      background-color: rgba(146, 145, 145, 0.562);
+    }
+
+    /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 700px) {
+      .row {
+        flex-direction: column;
+      }
+    }
+
+
+    vedio {
+      padding-top: 20px;
+    }
+
+    .vedio-container {
+      width: 100%;
+      height: 230px;
+      overflow: hidden;
+      box-sizing: content-box;
+    }
+
+    .vedio-container video {
+      min-width: none;
+      min-height: 100%;
+    }
+
+    input[type=text],
+    select,
+    textarea {
+      font-family: 'Joti One';
+      width: 100%;
+      padding: 3px;
+      border: 1px solid rgb(56, 54, 54);
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-top: 6px;
+      margin-bottom: 5px;
+      resize: vertical;
+      color: black;
+    }
+
+    input[type=button] {
+      font-family: 'Joti One';
+      background-color: #8f7f4c;
+      color: rgb(3, 3, 3);
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    input[type=button]:hover {
+      background-color: #9b724c;
+    }
+
+    .container {
+      font-family: 'Joti One';
+      color: rgb(255, 255, 255);
+      border-radius: 7px;
+      background-color: #1b1b1b;
+      padding: 5px;
+    }
+
+    ul li a.active {
+      color:rgba(0, 66, 53, 0.829);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="header">
+    <h1>ROCOFIT</h1>
+  </div>
+  <center>
+    <p>WELCOME TO ROCOFIT'S OFFICIAL WEBISTE</p>
+  </center>
+  <center><a href="signup%20page.html" class="button" value="REGISTER NOW">REGISTER HERE</a></center>
+  </div>
+  <ul>
+
+    <li><a href="bmicalculator.html">BMI Calculator</a></li>
+    <li><a href="Training.html">Training</a></li>
+    <li><a href="Timetable.html">Timetable</a></li>
+    <li><a href="Nutrition.html">Nutrition</a></li>
+    <li><a href="Gallery.html">Gallery</a></li>
+    <li><a class="active" href="Roco.html">Home</a></li>
+  </ul>
+
+  <div class="vedio-container">
+    <hd><video controls autoplay muted loop>
+        <source src="./Images/pexels-tima-miroshnichenko-6012521 (2).mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video></hd>
+  </div>
+
+
+
+  <div class="row">
+    <div class="side">
+      <h2>Member's Lounge</h2>
+      <p>The perfect place to unwind after your workout. Relax, read the papers, chat with other members and friends as
+        well as enjoy complimentary soft drinks, tea and coffee in the members’ lounge.</p>
+
+      <div class="fish" style="height:250px;background-image: url('./Images/memberlaunge.jpg'); background-size: cover;"></div>
+      <p></p>
+      <h3>WORLD CLASS FACILITIES</h3>
+      <p>Across the world, because members enjoy Fitness First like their second home, we strive to keep consistency in
+        the look and feel of all our clubs by maintaining the world-class facilities we offer and the high standard of
+        service.</p><br>
+      <div class="fish"><video width="100%" autoplay muted loop>
+          <source src="./Images/video3_Trim.mp4" type="video/mp4">
+
+          Your browser does not support HTML video.
+        </video>
+      </div>
+      <div class="fish" style="height:200px;background-image: url('./Images/access.jpg'); background-size: cover;"></div><br>
+      <div class="fish" style="height:200px;background-image: url('./Images/ClubPage.jpg'); background-size: cover;"></div><br>
+      <div class="fish"><video width="100%" autoplay muted loop>
+          <source src="./Images/video1_Trim.mp4" type="video/mp4">
+
+          Your browser does not support HTML video.
+        </video>
+        <p>* ROCOFIT is more than a place where high performers come to be their best.<br>
+
+          We’ve transformed every aspect of our membership to encompass integrated digital and in-club offerings to keep
+          you at your best—all the time, any time.</p>
+      </div> <br>
+      <div class="fish" style="height:300px;background-image: url('./Images/eq.jpg'); background-size: cover;"></div><br>
+      <div class="fish" style="height:300px;background-image: url('./Images/promo-equinox.jpg'); background-size: cover;">
+      </div><br>
+
+      <div class="fish"
+        style="height:300px;background-image: url('./Images/Indoor-Spa-wide-514x300.jpg'); background-size: cover;"></div>
+    </div>
+    <div class="main">
+      <h2>GYM</h2>
+
+      <div class="fish" style="height:600px;background-image: url('./Images/luxury.jpg'); background-size: cover;"></div>
+
+      <p>Within our clubs we've developed a brand new type of gym that integrates numerous types of training in a really
+        social, open-plan layout. It’s divided into specialised zones – we have areas for cardio, free weights, weights
+        machines, functional training and more. </p>
+      <p>With so much choice, it’s really easy to keep your workout interesting and fresh at ROCOFIT</p>
+      <br>
+      <h2>TENNIS COURTS & FACILITIES</h2>
+
+      <div class="fish" style="height:600px;background-image: url('./Images/tennisdome.jpg'); background-size: cover;"></div>
+
+      <p>Given our love of tennis, it’s no surprise that our facilities are second to none. We’ve got the world’s
+        largest team of qualified coaches, as well as 850 match-quality courts, both indoors and outdoors. It means you
+        can have a lesson, play a match or practice your serve all year round, whatever the weather – and you can book
+        courts in advance really quickly with our app too.</p>
+      <p>Our clubs are also home to vibrant communities of tennis-lovers, with competitions, matches and social events
+        making it easy to find new people to play, whatever your level. </p>
+      <br>
+
+      <h2>SWIMMING POOL & SPA FACILITIES</h2>
+
+      <div class="fish" style="height:600px;background-image: url('./Images/swimming.jpg'); background-size: cover;"></div>
+      <p>Here at ROCOFIT, we offer a wide range of facilities and services for the whole family. With both indoor and
+        outdoor pools at the majority of our clubs, you can look forward to swimming all year round, regardless of the
+        weather. Our pools are suitable for both intensive training and relaxing play-time for the kids. Plus, with
+        special shallow, splash pools at most clubs and trained lifeguards on constant watch during family swim
+        sessions, allow your kids to enjoy the water with complete peace of mind.</p>
+      <p>Once you’re out of the pool, relax in our state-of-the-art spas, complete with sauna, steam-room and whirlpools
+        depending on your club.</p>
+    </div>
+  </div>
+  <h3 style="font-family:'Joti One'" ;>Contact Form</h3>
+
+  <div class="container">
+    <form action="/action_page.php">
+      <label for="fname">First Name*</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your First Name..">
+
+      <label for="lname">Last Name*</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your Last Name..">
+
+      <label for="membership">Membership Number*</label>
+      <input type="text" id="membership" name="membershipnumber" placeholder="Membership Number/Check-In Code..">
+      
+      <label for="email">Mail*</label>
+      <input type="text" id="mail" name="email" placeholder="Your Mail Id..">
+
+      <label for="location">Location</label>
+      
+      <select id="location" name="location">
+        <option value="australia">Australia</option>
+        <option value="canada">Canada</option>
+        <option value="denmark">Denmark</option>
+        <option value="Egypt">Egypt</option>
+        <option value="germany">Germany
+        <option value="india">India</option>
+        <option value="poland">Poland</option>
+        <option value="spain">Spain</option>
+        <option value="turkey">Turkey</option>
+        <option value="usa">USA</option>
+        <option value="yemen">Yemen</option>
+        <option value="zimbabwe">Zimbabwe</option>
+      </select>
+
+      <label for="subject">Let us know your comments, concerns or requests*:</label>
+      <textarea id="subject" name="subject" placeholder="Write your queries here.." style="height:200px"></textarea>
+
+      <a href="Submit.html"> <input type="button" value="Submit"></a>
+    </form>
+  </div>
+
+
+  <div class="footer">
+    <h2>ROCOFIT</h2>
+    <p>#BeBetterEveryday</p>
+    <p>©️ Copyright 2021 -2031</p>
+  </div>
+
+
+</body>
+
+</html>

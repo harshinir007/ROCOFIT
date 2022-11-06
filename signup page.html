@@ -1,0 +1,147 @@
+<html>
+  <head>
+    <link href='https://fonts.googleapis.com/css?family=Montaga' rel='stylesheet'>
+  <link rel="stylesheet" 
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+    * {box-sizing: border-box}
+        body{
+            background-color: darkgrey;
+            padding: 30px;
+        }
+        kbd{
+            background-color: cornflowerblue;
+            padding: 13px;
+        }
+        p{
+            padding: 5px;
+            font-size: 17px;
+        }
+
+/* Full-width input fields */
+  input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #d1ccbb;
+}
+.icon {
+  padding: 10px;
+  color: white;
+  min-width: 50px;
+  text-align: center;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #2e290a;
+  margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+button {
+  font-family: 'Montaga';
+  font-size: 18px;
+  background-color: #90dbdb;
+  color: rgb(94, 92, 9);
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 30px;
+  background-color: #050505;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+        .bg-img {
+  /* The image used */
+  background-image: url("https://res.cloudinary.com/dpguvppia/image/upload/v1618551682/pexels-noelle-otto-906097_k501ye.jpg");
+
+  min-height: 380px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+            
+}
+/* Clear floats */
+.clearfix::after {
+  
+  content: "";
+  clear: both;
+  display: table;
+}
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 30px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+
+/* Add padding to container elements */
+.container {
+  font-family: 'Montaga';
+  font-size: 18px;
+    margin-bottom: 20px;
+  padding: 16px;
+    background-color:whitesmoke;
+    max-width: 600px;
+    
+}
+    </style>
+    <body class="bg-img">
+
+  <center><div class="container">
+     <center> <h1>Registration Form</h1>
+         <p><u>Please fill in this form to register yourself.</u></p></center>
+    <hr>
+      <label for="Name"><b>Name</b></label>
+    <input type="text" placeholder="Enter Name" name="Name" required>
+  
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <label for="psw-repeat"><b>Repeat Password</b></label>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+    <label>
+      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+    </label>
+
+    <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+    <div class="clearfix">
+      <button type="button" class="cancelbtn"><b>Cancel</b></button>
+      <a href="Thanks.html"><button type="submit" class="signupbtn"><b>Sign Up</b></button></a
+    </div>
+  </div>
+</center>
+    </body>
+</html>

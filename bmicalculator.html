@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initialscale=1.0" />
+    <style>
+        * {
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  width: 100%;
+  background: #c8e8e9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#bg {
+  width: 50%;
+  background: #fff;
+  border-radius: 6px;
+  padding: 20px 60px 30px 40px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.htext {
+  font-size: 40px;
+  font-weight: 1000;
+  color: #3e2093;
+  width: 100%;
+  margin: 40px 0;
+  text-align: center;
+}
+.input-box {
+  height: 50px;
+  width: 100%;
+  margin: 40px 0;
+}
+.input-box input {
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+
+  background: #f0f1f8;
+  border-radius: 6px;
+  padding: 0 15px;
+  resize: none;
+}
+.button {
+  margin-top: 20px;
+}
+.button input[type="button"] {
+  color: #fff;
+  width: 100%;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  background: #3e2093;
+  cursor: pointer;
+}
+ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: rgba(146, 123, 99, 0.747);
+    }
+
+    li {
+      float: right;
+      font-family: 'Joti One';
+      font-size: 22px;
+    }
+
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    li a:hover {
+      background-color: rgb(5, 5, 5);
+    }
+
+    </style>
+    <title>BMI Calculator</title>
+  </head>
+  <body>
+   
+      <ul>
+      
+        <li><a class="active" href="bmicalculator.html">BMI Calculator</a></li>
+        <li><a href="Training.html">Training</a></li>
+        <li><a href="Timetable.html">Timetable</a></li>
+        <li><a href="Nutrition.html">Nutrition</a></li>
+       <li><a  href="Gallery.html">Gallery</a></li>
+       <li><a href="index.html">Home</a></li>
+      </ul>
+    <section id="bg">
+      <div id="main">
+        <div class="htext">BMI Calculator</div>
+        <form action="">
+          <div class="input-box">
+            <input
+              type="number"
+              placeholder="Enter your 
+Weight(in kgs)"
+              id="weight"
+            />
+          </div>
+          <div class="input-box">
+            <input
+              type="number"
+              placeholder="Enter your 
+Height(in metre)"
+              id="height"
+              step="0.1"
+            />
+          </div>
+
+          <div class="button">
+            <input onclick="myfunction()" type="button" value="Calculate" />
+          </div>
+        </form>
+      </div>
+    </section>
+    <script>
+        function myfunction() {
+  var height = document.getElementById("height").value;
+  var weight = document.getElementById("weight").value;
+  var result = weight / (height * height);
+  var res = result.toFixed(2);
+  alert(
+    "Given, \r\nWeight : " +
+      weight +
+      " kg\r\nHeight : " +
+      height +
+      " mtrs\r\nBMI value is " +
+      res
+  );
+}
+
+    </script>
+  </body>
+</html>

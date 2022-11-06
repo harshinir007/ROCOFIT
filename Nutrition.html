@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href='https://fonts.googleapis.com/css?family=New Rocker' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Risque' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Joti One' rel='stylesheet'>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+   html { 
+  background: url(./Images/bs.jpg) no-repeat center fixed; 
+  background-size: cover;
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+  font-family: 'Fauna One', serif;
+  padding: 20px;
+  background: #f1f1f1;
+}
+
+
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+
+.fish {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  font-family: 'Risque';font-size: 22px;
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+
+ 
+  .footer {
+    font-family: 'Joti One';
+      padding: 22px;
+      text-align: center;
+      background-image: url("./Images/pc.jpg");
+      background-size: cover;
+  position: relative;}
+ 
+ /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */ 
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+.glow {
+  
+  color: rgb(83, 6, 6);
+  text-align: center;
+  animation: glow 0.5s ease-in-out infinite alternate;
+  font-family: 'New Rocker';
+  font-size: 60px;
+  padding: 30px;
+  text-align: center;
+  text-color: rgb(248, 248, 248);
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px rgb(0, 0, 0), 0 0 20px rgb(0, 0, 0), 0 0 30px #000000, 0 0 40px #000000, 0 0 50px #000000, 0 0 60px #000000, 0 0 70px #000000;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #797676, 0 0 40px #242222, 0 0 50px #424242, 0 0 60px #7b7b7c, 0 0 70px #02080a, 0 0 80px #aaaaaa;
+  }
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgba(146, 123, 99, 0.747);
+}
+
+li {
+  float: right;
+  font-family: 'Joti One';font-size: 22px;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: rgb(5, 5, 5);
+}
+ul li a.active {
+      color: rgb(160, 4, 4);
+    }
+</style>
+</head>
+<body>
+
+<div class="glow" style="background-image: url('./Images/plant.jpg');background-repeat: no-repeat; color:whitesmoke">
+  <h2>NUTRITION</h2>
+</div>
+<ul>
+  
+  <li><a href="bmicalculator.html">BMI Calculator</a></li>
+  <li><a href="Training.html">Training</a></li>
+  <li><a href="Timetable.html">Timetable</a></li>
+  <li><a class="active" href="Nutrition.html">Nutrition</a></li>
+ <li><a href="Gallery.html">Gallery</a></li>
+ <li><a href="index.html">Home</a></li>
+</ul>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Healthy Banana Oats Pancake</h2>
+      <h5>by ROCOFIT, April 22, 2021</h5>
+      <div class="fish" style="height:600px; background-image: url('./Images/pancake2.jpg'); background-size: cover;"></div>
+      <p>Diet, Health</p>
+      <p>As the name suggests it is healthy but this is a very delicious meal which you can have. Most of us choose the forbidden meal options because that calls out to our hearts directly, but do we need to go to the unhealthiest options for our cheat meal? We all know deep down in that we have multiple options which are not only mouth-watering but also not that far from your healthy diet.</p>
+    </div>
+    <div class="card">
+      <h2>Crispy Baked French Fries Recipe</h2>
+      <h5>by ROCOFIT, April 25, 2021</h5>
+      <div class="fish" style="height:450px; background-image: url('./Images/frenchfries1.jpg'); background-size: cover;"></div>
+      <p>Health, Nutrition</p>
+      <p>If you say you don’t like fries, you’re lying to yourself and the world, because everybody loves fries. But is there a healthier version of fries that if not more, equally tasty as regular French fries? Go through the article to know the recipe and benefits of sweet potato fries and go all kinds of master chef later.</p>
+    </div>
+    <div class="card">
+      <h2>Raw Brownies</h2>
+      <h5>by ROCOFIT, April 30, 2021</h5>
+      <div class="fish" style="height:600px; background-image: url('./Images/brown.jpg'); background-size: cover;"></div>
+      <p>Diet, Health</p>
+      <p>Craving for some dessert, something sweet but need a healthy option? Check out the gluten-free healthy vegan brownies. What can be a better option that takes just 10 minutes to make and is perfectly healthy!!
+
+        The Raw brownies can be prepared with just five ingredients which are raw walnuts, cocoa powder, dates, water and little salt. Optionally you can add some cacao nibs and vanilla but that is not needed. </p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>Tone-Up Your Body For Your Wedding!</h2>
+      <div class="fish" style="height:300px; background-image: url('./Images/bride2.jpg'); background-size: cover;"></div>
+      <p>Exercise is one of the best ways to eliminate stress before your wedding, and a pre-wedding workout routine will give you the bonus of feeling special on your big day.</p>
+    </div>
+    <div class="card">
+      <h3>Popular Post</h3>
+      <div class="fish"style="height:170px; background-image: url('./Images/bean1.jpg'); background-size: cover;"></div><br>
+      <p><u>Adding Beans To Your Diet</u></p>
+      <p>Beans are widespread food around the world and for good reason. They are rich in fiber, protein, and can be delicious.
+        In Japan, for instance, red beans are commonly used in desserts.
+      </p>
+      <div class="fish" style="height:300px; background-image: url('./Images/cooking.jpg'); background-size: cover;"></div><br>
+      <p><u>Gluten-Free Food And Its Importance</u></p>
+      <p>Gluten is basically a group of plant proteins that are predominantly found in the grains of cereals.Gluten-free food is also highly recommended for those who suffer from
+        chronic gastric disorders..</p>
+      
+    </div>
+    <div class="card">
+      <h3>FITNESS</h3>
+    <div class="fish"  style="height:300px; background-image: url('./Images/adult-blur-close-up-267394-870x580.jpg'); background-size: cover;"></div>
+      
+      <p><u>Advantages Of Wearable Technologies For Gym</u></p>
+      <p>When you are exercising in the gym, there are certain things that you need to have for sure. 
+        Wearing some gadgets that signify the wearable technology is definitely one of those things that you need to keep in mind for sure.</p>
+    </div>
+    <div class="card">
+    <p2><em>* Articles wriiten by ROCOFIT speacialists.We are providing "THE BEST" services all around the world  :) </em></p2>
+    </div>
+
+  </div>
+  </div>
+</div>
+<div class="footer">
+  <p>ROCOFIT</p>
+  <p>#BeBetterEveryDay</p>
+  <p>©️ Copyright 2021 -2031</p> 
+</div>
+
+
+</div>
+
+</body>
+</html>
